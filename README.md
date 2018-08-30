@@ -11,7 +11,7 @@
 
 *Course Work Links*
 
-1. ![A1 README.md](A1/A1 README.md)
+1. [A1 README.md](A1/A1 README.md)
 
 	* Install AMPPS
 	* Install JDK
