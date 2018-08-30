@@ -49,7 +49,7 @@
 
 *Screenshot of Android Studio - My First App*:
 
-![Android Studio Installation Screenshot](img/android)
+![Android Studio Installation Screenshot](img/android.png)
 
 
 #### Tutorial Links:
