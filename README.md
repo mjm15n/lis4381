@@ -11,7 +11,8 @@
 
 *Course Work Links*
 
-1. [A1 README.md](https://bitbucket.org/meredithmcnulty/A1/A1 README.md "A1 README.md")
+1. ![A1 README.md](A1/A1 README.md)
+
 	* Install AMPPS
 	* Install JDK
 	* Install Android Studio and create My First App
