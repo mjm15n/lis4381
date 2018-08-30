@@ -39,7 +39,7 @@
 
 #### Assignment Screenshots:
 
-*Screenshot of AMPPS running http://localhost*:
+*Screenshot of AMPPS running My PHP Installation*:
 
 ![AMPPS Installation Screenshot](img/ampps.png)
 
