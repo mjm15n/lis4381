@@ -9,7 +9,7 @@
 
 ### Assignment #1 Requirements:
 
-*Sub-Heading:*
+*Three Parts:*
 
 1. Distributed Version Control with Git and Bitbucket
 2. Development Installations
