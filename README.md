@@ -21,7 +21,7 @@
 	* Complete Bitbucket tutorial (bitbucketstationlocations)
 	* Provide git command descriptions
 
-2. A2 README.md
+2. [A2 README.md](A2/A2 README.md)
 	* Create Healthy Reipes Android App
 	* Provide screenshots of completed app
 	
