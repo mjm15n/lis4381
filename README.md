@@ -25,7 +25,7 @@
 	* Create Healthy Reipes Android App
 	* Provide screenshots of completed app
 	
-3. A3 README.md
+3. [A3 README.md](A3/A3 README.md)
 	* Create ERD based upon business rules
 	* Provide screenshot of completed ERD
 	* Provide DB resource links
