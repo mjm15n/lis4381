@@ -12,7 +12,6 @@
 *Course Work Links*
 
 1. [A1 README.md](A1/A1 README.md)
-
 	* Install AMPPS
 	* Install JDK
 	* Install Android Studio and create My First App
@@ -26,6 +25,7 @@
 	* Provide screenshots of completed app
 	
 3. [A3 README.md](A3/A3 README.md)
+	* Create Ticket Price Calculator App
 	* Create ERD based upon business rules
 	* Provide screenshot of completed ERD
 	* Provide DB resource links
@@ -41,4 +41,3 @@
 
 7. P2 README.md	
 	* TBD
-
