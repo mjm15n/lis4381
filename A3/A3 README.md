@@ -42,11 +42,11 @@ For the Pet's R-Us business, it's important to ask the following questions to ge
 
 *Screenshot of running ERD*:
 
-![ERD Screenshot](img/app1.png)
+![ERD Screenshot](img/erd.png)
 
 *Screenshot of running application's first user interface*:
 
-![App Running Screen 1 Screenshot](img/app2.png)
+![App Running Screen 1 Screenshot](img/app1.png)
 
 *Screenshot of running application's second user interface*:
 
