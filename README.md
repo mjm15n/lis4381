@@ -36,8 +36,9 @@
 5. A5 README.md	
 	* TBD
 
-6. P1 README.md	
-	* TBD
+6. [P1 README.md](P1/P1 README.md)	
+	* Create Business Card App
+	* Provide screenshots of completed app
 
 7. P2 README.md	
 	* TBD
