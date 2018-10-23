@@ -24,6 +24,12 @@
 	a) a3.mwb
 	b) a3.sql
 
+*Links to a3.mwb & a3.sql*:
+
+[a3.mwb](a3.mwb)
+[a3.sql](a3.sql)
+
+
 #### Assignment Screenshots:
 
 *Screenshot of running ERD*:
