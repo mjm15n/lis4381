@@ -26,8 +26,8 @@
 
 *Links to a3.mwb & a3.sql*:
 
-[a3.mwb](a3.mwb)
-[a3.sql](a3.sql)
+[a3.mwb](A3_McNulty.mwb)
+[a3.sql](A3.sql)
 
 
 #### Assignment Screenshots:
