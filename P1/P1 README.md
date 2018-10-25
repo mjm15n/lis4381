@@ -25,8 +25,8 @@
 
 *Screenshot of running application's first user interface*:
 
-![App Running Screen 1 Screenshot](img/app1.png =250x)
+![App Running Screen 1 Screenshot](img/app1.png =100x)
 
 *Screenshot of running application's second user interface*:
 
-![App Running Screen 2 Screenshot](img/app2.png =250x)
+![App Running Screen 2 Screenshot](img/app2.png =100x)
