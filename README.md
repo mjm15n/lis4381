@@ -11,7 +11,7 @@
 
 *Course Work Links*
 
-1. [A1 README.md](A1/A1 README.md)
+1. [A1 README.md](a1/a1_README.md)
 	* Install AMPPS
 	* Install JDK
 	* Install Android Studio and create My First App
@@ -20,11 +20,11 @@
 	* Complete Bitbucket tutorial (bitbucketstationlocations)
 	* Provide git command descriptions
 
-2. [A2 README.md](A2/A2 README.md)
+2. [A2 README.md](a2/a2_README.md)
 	* Create Healthy Reipes Android App
 	* Provide screenshots of completed app
 	
-3. [A3 README.md](A3/A3 README.md)
+3. [A3 README.md](a3/a3_README.md)
 	* Create Ticket Price Calculator App
 	* Create ERD based upon business rules
 	* Provide screenshot of completed ERD
@@ -36,7 +36,7 @@
 5. A5 README.md	
 	* TBD
 
-6. [P1 README.md](P1/P1 README.md)	
+6. [P1 README.md](p1/p1_README.md)	
 	* Create Business Card App
 	* Provide screenshots of completed app
 
