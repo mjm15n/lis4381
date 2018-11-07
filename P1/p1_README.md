@@ -9,7 +9,7 @@
 
 ### Project #1 Requirements:
 
-*Three Parts:*
+*Four Parts:*
 
 1. Create a launcher icon image and display it in both activities (screens)
 2. Must add background color(s) to both activities

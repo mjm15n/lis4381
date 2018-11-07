@@ -13,7 +13,7 @@
 
 1. Create a ticket price calculator using Android Studio.
 2. Change the background color.
-3. Chapter Questions 3 & 4.
+3. Provide screenshots of ERD and app running.
 
 #### README.md file should include the following items:
 

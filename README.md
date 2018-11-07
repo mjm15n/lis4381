@@ -31,7 +31,9 @@
 	* Provide DB resource links
 
 4. A4 README.md
-	* TBD
+	* Create an online portfolio using AMMPS
+	* A1, A2, A3, and P1 links *must* work, *and* each index.php file should have content, as per the associated Bitbucket README.md files.
+	* Provide screenshots of local lis4381 web app
 
 5. A5 README.md	
 	* TBD
