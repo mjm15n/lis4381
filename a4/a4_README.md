@@ -21,7 +21,7 @@
 * Screenshot of failed validation
 * Screenshot of passed validation
 * Links to local lis4381 web app: 
-	a) [Online Portfolio] (http://localhost/repos/lis4381/)
+	a) [Online Portfolio](http://localhost/repos/lis4381/)
 
 
 #### Assignment Screenshots:
