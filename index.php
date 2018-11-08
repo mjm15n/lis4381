@@ -48,65 +48,53 @@ h2
 						<div class="page-header">
 							<?php include_once("global/header.php"); ?>	
 						</div>
-
-<!-- Start Bootstrap Carousel  -->
-<div class="bs-example">
-	<div
-      id="myCarousel"
-		class="carousel"
-		data-interval="1000"
-		data-pause="hover"
-		data-wrap="true"
-		data-keyboard="true"			
-		data-ride="carousel">
 		
-    	<!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>   
-       <!-- Carousel items -->
-        <div class="carousel-inner">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-			<!-- -Note: you will need to modify the code to make it work with *both* text and images.  -->
-          <div class="active item">
-						<div class="container">
-                <div class="carousel-caption">
-                  <h3>First slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						 <img src="images/slide1.png" alt="Slide 1">
-                </div>
-            </div>
-
-            <div class="item">
-                <h2>Slide 2</h2>
-                <div class="carousel-caption">
-                  <h3>Second slide label</h3>
-                  <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-						 <img src="images/slide2.png" alt="Slide 2">									
-                </div>
-            </div>
-
-            <div class="item">
-                <h2>Slide 3</h2>
-                <div class="carousel-caption">
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-						 <img src="images/slide3.png" alt="Slide 3">									
-                </div>
-            </div>
-
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/slide1.png" alt="Chania">
+          <div class="carousel-caption">
+            <h3>Cup of Java</h3>
+            <p>Brewing Apps in Android Studio</p>
+          </div>
         </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+
+        <div class="item">
+          <img src="images/slide2.png" alt="Chicago">
+          <div class="carousel-caption">
+            <h3>Effective Interface & UX Design</h3>
+            <p>Buiding Mobile Web Applications</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/slide3.png" alt="New York">
+          <div class="carousel-caption">
+            <h3>Best Practices in Prototyping</h3>
+            <p>Using Data Repositories to Build Dynamic Products</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-</div>
+    
 <!-- End Bootstrap Carousel  -->
 						
 <?php
