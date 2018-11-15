@@ -31,13 +31,13 @@
 				</p>
 
 				<h4>Java Installation</h4>
-				<img src="img/jdk_install.png" class="img-responsive center-block" alt="JDK Installation">
+				<img src="img/jdk_install.png" class="img-responsive center-block" alt="JDK Installation" style="max-width: 600px">
 
 				<h4>Android Studio Installation</h4>
-				<img src="img/Android.png" class="img-responsive center-block" alt="Android Studio Installation">
+				<img src="img/Android.png" class="img-responsive center-block" alt="Android Studio Installation" style="max-width: 600px">
 
 				<h4>AMPPS Installation</h4>
-				<img src="img/ampps.png" class="img-responsive center-block" alt="AMPPS Installation">
+				<img src="img/ampps.png" class="img-responsive center-block" alt="AMPPS Installation" style="max-width: 600px">
 				
 				<?php include_once "global/footer.php"; ?>
 

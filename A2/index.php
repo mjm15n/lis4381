@@ -31,10 +31,10 @@
 				</p>
 
 				<h4>App Running Screen 1 Screenshot</h4>
-				<img src="img/app1.png" class="img-responsive center-block" alt="App Running Screen 1 Screenshot">
+				<img src="img/app1.png" class="img-responsive center-block" alt="App Running Screen 1 Screenshot" style="max-width: 400px">
 
 				<h4>App Running Screen 2 Screenshot</h4>
-				<img src="img/app2.png" class="img-responsive center-block" alt="App Running Screen 2 Screenshot">
+				<img src="img/app2.png" class="img-responsive center-block" alt="App Running Screen 2 Screenshot" style="max-width: 400px">
 
 				<?php include_once "global/footer.php"; ?>
 

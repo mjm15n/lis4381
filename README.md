@@ -35,8 +35,10 @@
 	* A1, A2, A3, and P1 links *must* work, *and* each index.php file should have content, as per the associated Bitbucket README.md files.
 	* Provide screenshots of local lis4381 web app
 
-5. A5 README.md	
-	* TBD
+5. [A5 README.md](a5/a5_README.md)
+	* Add server-side validation and regular expressions as per the database entity attribute requirements
+	* Review other sub-directories and files, and modify them accordingly
+	* Provide screenshots of index.php and add_petstore_process.php
 
 6. [P1 README.md](p1/p1_README.md)	
 	* Create Business Card App
