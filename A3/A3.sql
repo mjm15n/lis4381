@@ -151,7 +151,7 @@ COMMIT;
 START TRANSACTION;
 USE `mjm15n`;
 INSERT INTO `mjm15n`.`pet` (`pet_id`, `pst_id`, `cus_id`, `pet_type`, `pet_sex`, `pet_cost`, `pet_price`, `pet_age`, `pet_color`, `pet_sale_date`, `pet_vaccine`, `pet_neuter`, `pet_notes`) VALUES (1, 1, 5, 'Doberman', 'm', 350, 525, 2, 'black', '2018-05-12', 'n', 'n', NULL);
-INSERT INTO `mjm15n`.`pet` (`pet_id`, `pst_id`, `cus_id`, `pet_type`, `pet_sex`, `pet_cost`, `pet_price`, `pet_age`, `pet_color`, `pet_sale_date`, `pet_vaccine`, `pet_neuter`, `pet_notes`) VALUES (2, 2, NULL, 'Chiwawa', 'm', 175, 165, 5, 'white', '2017-02-30', 'n', 'n', NULL);
+INSERT INTO `mjm15n`.`pet` (`pet_id`, `pst_id`, `cus_id`, `pet_type`, `pet_sex`, `pet_cost`, `pet_price`, `pet_age`, `pet_color`, `pet_sale_date`, `pet_vaccine`, `pet_neuter`, `pet_notes`) VALUES (2, 2, NULL, 'Chiwawa', 'm', 175, 165, 5, 'white', '2017-02-20', 'n', 'n', NULL);
 INSERT INTO `mjm15n`.`pet` (`pet_id`, `pst_id`, `cus_id`, `pet_type`, `pet_sex`, `pet_cost`, `pet_price`, `pet_age`, `pet_color`, `pet_sale_date`, `pet_vaccine`, `pet_neuter`, `pet_notes`) VALUES (3, 3, 5, 'American Bobtail', 'f', 195, 385, 4, 'black/tan', '2018-03-12', 'y', 'y', NULL);
 INSERT INTO `mjm15n`.`pet` (`pet_id`, `pst_id`, `cus_id`, `pet_type`, `pet_sex`, `pet_cost`, `pet_price`, `pet_age`, `pet_color`, `pet_sale_date`, `pet_vaccine`, `pet_neuter`, `pet_notes`) VALUES (4, 4, 3, 'American Longhair', 'f', 165, 275, 6, 'grey', '2017-12-12', 'y', 'y', NULL);
 INSERT INTO `mjm15n`.`pet` (`pet_id`, `pst_id`, `cus_id`, `pet_type`, `pet_sex`, `pet_cost`, `pet_price`, `pet_age`, `pet_color`, `pet_sale_date`, `pet_vaccine`, `pet_neuter`, `pet_notes`) VALUES (5, 5, NULL, 'British Shorthair', 'm', 155, 145, 1, 'green', '2018-06-06', 'n', 'y', NULL);

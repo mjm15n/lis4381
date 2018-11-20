@@ -1,5 +1,8 @@
 <?php
-//database connection code goes here...
+require_once "global/connection.php";
+$query = "SELECT * FROM petstore ORDER BY pst_id";
+$statement = $db->prepare($query);
+$statement->execute();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,15 +34,69 @@
 
  <div class="table-responsive">
 	 <table id="myTable" class="table table-striped table-condensed" >
+	 	<thead>
+	 		<tr>
+	 			<th>Name</th>
+	 			<th>Street</th>
+	 			<th>City</th>
+	 			<th>State</th>
+	 			<th>Zip</th>
+	 			<th>Phone</th>
+	 			<th>Email</th>
+	 			<th>URL</th>
+	 			<th>YTD Sales</th>
+	 			<th>Notes</th>
+	 			<th>&nbsp;</th>
+	 			<th>&nbsp;</th>
+	 		</tr>
+	 	</thead>
 
-		 <!-- Code displaying PetStore data with Edit/Delete buttons goes here // -->
+	 	<?php
+	 	$result = $statement->fetch();
+	 	while($result != null)
+	 	{
 
+	 	?>
+	 	<tr>
+		 	<td><?php echo htmlspecialchars($result['pst_name']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_street']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_city']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_state']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_zip']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_phone']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_email']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_url']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_ytd_sales']); ?></td>
+		 	<td><?php echo htmlspecialchars($result['pst_notes']); ?></td>
+
+		 	<td>
+		 		<form
+		 			onsubmit="return confirm('Do you really want to delete records?')";
+		 			action="delete_petstore.php"
+		 			method="post"
+		 			id="delete_petstore">
+		 			<input type="hidden" name="pst_id" value"<?php echo $result['pst_id']; ?>" />
+		 			<input type ="submit" value="Delete" />
+		 		</form>
+		 	</td>
+
+		 	<td>
+			 	<form action="edit_petstore.php" method="post" id="edit_petstore">
+			 		<input type="hidden" name="pst_id" value="<?php echo $result['pst_id']; ?>" />
+			 		<input type ="submit" value="Edit" />
+			 	</form>
+		 	</td>
+	 	</tr>
+	 	<?php
+	 	$result = $statement->fetch();
+	 	}
+	 	$statement->closeCursor();
+	 	$db = null;
+	 	?>
 	 </table>
  </div> <!-- end table-responsive -->
  	
-<?php
-include_once "global/footer.php";
-?>
+<?php include_once "global/footer.php"; ?>
 
 			</div> <!-- end starter-template -->
   </div> <!-- end container -->
@@ -62,8 +119,8 @@ include_once "global/footer.php";
 	 //permit sorting (i.e., no sorting on last two columns: delete and edit)
     "columns":
 		[
-      null,
-      null,
+      	null,
+      	null,
 		null,
 		null,
 		null,
