@@ -26,7 +26,7 @@
 
 *Screenshot of index.php*:
 
-![Index.php screenshot](img/index.png)
+![index.php screenshot](img/index.png)
 
 *Screenshot of add_petstore_process.php*:
 
