@@ -44,5 +44,8 @@
 	* Create Business Card App
 	* Provide screenshots of completed app
 
-7. P2 README.md	
-	* TBD
+7. [P2 README.md](p2/p2_README.md)	
+	* Add server-side validation and regular expressions as per the database entity attribute requirements
+	* Review other sub-directories and files, and modify them accordingly
+	* Provide screenshots of index.php, edit_petstore.php, edit_petstore_process.php, homepage, and RSS Feed
+

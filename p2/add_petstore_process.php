@@ -25,7 +25,7 @@ $valid_name = preg_match($pattern, $pst_name_v);
 $pattern='/^[a-zA-Z0-9,\s\.]+$/';
 $valid_street = preg_match($pattern, $pst_street_v);
 
-$pattern='/^[a-zA-Z\s]+$/';
+$pattern='/^[a-zA-Z0-9\s]+$/';
 $valid_city = preg_match($pattern, $pst_city_v);
 
 $pattern='/^[a-zA-Z]{2,2}+$/';

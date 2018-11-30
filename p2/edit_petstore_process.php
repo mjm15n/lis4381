@@ -8,16 +8,17 @@ error_reporting(E_ALL);
 //use for inital test of form inputs
 //exit(print_r($_POST));
 
-$pst_name_v = $_POST['name'];
-$pst_street_v = $_POST['street'];
-$pst_city_v = $_POST['city'];
-$pst_state_v = $_POST['state'];
-$pst_zip_v = $_POST['zip'];
-$pst_phone_v = $_POST['phone'];
-$pst_email_v = $_POST['email'];
-$pst_url_v = $_POST['url'];
-$pst_ytd_sales_v = $_POST['ytd_sales'];
-$pst_notes_v = $_POST['notes'];
+$pst_id_v = $_POST['pst_id'];
+$pst_name_v = $_POST['pst_name'];
+$pst_street_v = $_POST['pst_street'];
+$pst_city_v = $_POST['pst_city'];
+$pst_state_v = $_POST['pst_state'];
+$pst_zip_v = $_POST['pst_zip'];
+$pst_phone_v = $_POST['pst_phone'];
+$pst_email_v = $_POST['pst_email'];
+$pst_url_v = $_POST['pst_url'];
+$pst_ytd_sales_v = $_POST['pst_ytd_sales'];
+$pst_notes_v = $_POST['pst_notes'];
 
 $pattern='/^[a-zA-Z0-9\-_\s]+$/';
 $valid_name = preg_match($pattern, $pst_name_v);
@@ -25,7 +26,7 @@ $valid_name = preg_match($pattern, $pst_name_v);
 $pattern='/^[a-zA-Z0-9,\s\.]+$/';
 $valid_street = preg_match($pattern, $pst_street_v);
 
-$pattern='/^[a-zA-Z\s]+$/';
+$pattern='/^[a-zA-Z0-9\s]+$/';
 $valid_city = preg_match($pattern, $pst_city_v);
 
 $pattern='/^[a-zA-Z]{2,2}+$/';
@@ -114,13 +115,24 @@ else{
 	require_once('global/connection.php');
 
 	$query =
-	"INSERT INTO petstore
-	(pst_name, pst_street, pst_city, pst_state, pst_zip, pst_phone, pst_email, pst_url, pst_ytd_sales, pst_notes)
-	VALUES
-	(:pst_name_p, :pst_street_p, :pst_city_p, :pst_state_p, :pst_zip_p, :pst_phone_p, :pst_email_p, :pst_url_p, :pst_ytd_sales_p, :pst_notes_p)";
+	"UPDATE petstore
+	SET
+	pst_name = :pst_name_p,
+	pst_street = :pst_street_p,
+	pst_city = :pst_city_p,
+	pst_state = :pst_state_p,
+	pst_zip = :pst_zip_p,
+	pst_phone = :pst_phone_p,
+	pst_email = :pst_email_p,
+	pst_url = :pst_url_p,
+	pst_ytd_sales = :pst_ytd_sales_p,
+	pst_notes = :pst_notes_p
+	WHERE pst_id = :pst_id_p";
+
 	try
 	{
 		$statement = $db->prepare($query);
+		$statement->bindParam(':pst_id_p', $pst_id_v);
 		$statement->bindParam(':pst_name_p', $pst_name_v);
 		$statement->bindParam(':pst_street_p', $pst_street_v);
 		$statement->bindParam(':pst_city_p', $pst_city_v);
@@ -131,18 +143,14 @@ else{
 		$statement->bindParam(':pst_url_p', $pst_url_v);
 		$statement->bindParam(':pst_ytd_sales_p', $pst_ytd_sales_v);
 		$statement->bindParam(':pst_notes_p', $pst_notes_v);
-		$statement->execute();
+		$row_count = $statement->execute();
 		$statement->closeCursor();
-		$last_auto_increment_id = $db->lastInsertId();
-		//exit(last_auto_increment_id);
-		//include('index.php'); //forwarding is faster, one trip to server
-		header('Location: index.php'); //sometimes, redirecting is needed (two trips to server)
 	}
-
 	catch(PDOException $e){
 		$error = $e->getMessage();
 		echo $error;
 	}
+	header('Location: index.php'); //sometimes, redirecting is needed (two trips to server)
 }
 ?>
 

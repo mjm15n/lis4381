@@ -7,8 +7,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- Turn off client-side validation, in order to test server-side validation.  -->
-<script type="text/javascript" src="../js/formValidation/formValidation.min.js"></script>
-
+<!-- <script type="text/javascript" src="../js/formValidation/formValidation.min.js"></script>
+ -->
 <!-- Note the following bootstrap.min.js file is for form validation, different from the one above. -->
 <script type="text/javascript" src="../js/formValidation/bootstrap.min.js"></script>
 
